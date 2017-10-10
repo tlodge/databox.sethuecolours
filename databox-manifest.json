@@ -1,1 +1,61 @@
-{"app":{"name":"sethuecolours","description":"set hue colours","tags":"set, hue, colours","id":"5d84c951.dbfa98"},"packages":[{"type":"tab","id":"a8beaa46.5ad8b8","name":"new package","risks":"","benefits":"sets colours of bulbs","purpose":"initially  set hue bulb colours","install":"optional","datastores":[{"id":"74d39825.040768","name":"bulbsout","type":"set-bulb-hue"},{"id":"cf438d57.1406d","name":"bulbsout","type":"set-bulb-hue"},{"id":"e4eef929.1fb798","name":"bulbsout","type":"set-bulb-hue"}]}],"allowed-combinations":[]}
+{
+    "manifest-version": 1,
+    "name": "tlodge-sethuecolours",
+    "version": "0.1.0",
+    "description": "set hue colours",
+    "author": "tlodge",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "set",
+        " hue",
+        " colours"
+    ],
+    "homepage": "https://github.com/tlodge/tlodge-sethuecolours",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/tlodge-sethuecolours.git"
+    },
+    "packages": [
+        {
+            "id": "a8beaa46.5ad8b8",
+            "name": "new package",
+            "purpose": "initially  set hue bulb colours",
+            "required": false,
+            "datastores": [
+                "74d39825.040768",
+                "cf438d57.1406d",
+                "e4eef929.1fb798"
+            ],
+            "benefits": "sets colours of bulbs"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "set-bulb-hue",
+            "required": true,
+            "name": "bulbsout",
+            "clientid": "74d39825.040768",
+            "granularities": []
+        },
+        {
+            "type": "set-bulb-hue",
+            "required": true,
+            "name": "bulbsout",
+            "clientid": "cf438d57.1406d",
+            "granularities": []
+        },
+        {
+            "type": "set-bulb-hue",
+            "required": true,
+            "name": "bulbsout",
+            "clientid": "e4eef929.1fb798",
+            "granularities": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": []
+}
